@@ -1,3 +1,60 @@
-body{
+body {
     background: #090909;
+    font-family: 'Roboto', sans-serif;
+    color: #c0c0bf;
+    box-sizing: border-box;
+}
+
+a:link,
+a:visited
+{
+    color: #c0c0bf;
+    text-decoration: none;
+}
+
+
+.container {
+    padding: 15px;
+}
+header{
+}
+
+.header-logo {
+    display: inline-block;
+}
+.logo {
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: 1px solid #c0c0bf;
+}
+
+.logo span:first-child {
+    font-weight: 300;
+}
+.logo span:nth-child(2) {
+    font-weight: 700;
+}
+
+/* Becouse in this div position is set to fixed(relative to the viewport),
+ top end right : 0, margin of this div should be same as padding in container */
+.language {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    line-height: 1;
+    margin-top: 15px;
+}
+
+/* I don't know why padding is moving this element from right edge of the viewport but isn't from the top edge of the viewport.
+   I need add margin-top: 15px; to parent div(.language).
+*/
+.language a{
+    padding: 15px;
+}
+.footer-logo {
+    display: none;
 }
