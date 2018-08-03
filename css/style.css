@@ -55,6 +55,22 @@ header{
 .language a{
     padding: 15px;
 }
+
+.fake-photo {
+    width: 90%;
+    height: 55px;
+    background: #c0c0bf;
+    /* Code below is making this div vertically in the middle of viewport */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    
+}
 .footer-logo {
     display: none;
 }
