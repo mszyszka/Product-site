@@ -17,6 +17,7 @@ a:visited
     padding: 15px;
 }
 header{
+    height: auto;
 }
 
 .header-logo {
@@ -56,6 +57,11 @@ header{
     padding: 15px;
 }
 
+/* Im setting height of this section to 100% of viewport height thanks to that my product photo(fake-photo for now) always will be only element visible on
+ view after page load. Rest will be bellow */
+#presentation-photo {
+    height: 100vh;
+}
 .fake-photo {
     width: 90%;
     height: 55px;
@@ -71,6 +77,15 @@ header{
     -ms-transform: translate(-50%, -50%);
     
 }
+
+.product-info {
+    text-transform: uppercase;
+}
+.product-info p:first-child{
+    font-size: 22px;
+}
+.product-info p:nth-child(2){}
+
 .footer-logo {
     display: none;
 }
