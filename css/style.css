@@ -66,6 +66,7 @@ header{
     width: 90%;
     height: 55px;
     background: #c0c0bf;
+    text-align: center;
     /* Code below is making this div vertically in the middle of viewport */
     position: absolute;
     top: 50%;
@@ -75,16 +76,33 @@ header{
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    
+    /* element reflect */
+    -webkit-box-reflect: below 0 -webkit-gradient(linear,left top,left bottom,
+    from(transparent),
+    color-stop(50%,transparent),
+    to(rgba(250,250,250,.5)));
 }
 
+.fake-photo p{
+    color: #090909;
+    color: #090909;
+    text-transform: uppercase;
+    font-size: 79px;
+    line-height: 0.7;
+    font-weight: 700;
+}
 .product-info {
     text-transform: uppercase;
 }
-.product-info p:first-child{
+.product-info h1 {
     font-size: 22px;
 }
-.product-info p:nth-child(2){}
+.product-info p:first-of-type{
+    margin-bottom: 10px;
+}
+.product-info p:nth-of-type(2){
+    text-align: justify;
+}
 
 .footer-logo {
     display: none;
