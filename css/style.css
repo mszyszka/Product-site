@@ -1,14 +1,14 @@
 body {
     background: #090909;
     font-family: 'Roboto', sans-serif;
-    color: #c0c0bf;
+    color: #ffffff;
     box-sizing: border-box;
 }
 
 a:link,
 a:visited
 {
-    color: #c0c0bf;
+    color: #777777;
     text-decoration: none;
 }
 
@@ -24,6 +24,7 @@ header{
     display: inline-block;
 }
 .logo {
+    color: #c0c0bf;
     text-transform: uppercase;
     font-size: 16px;
     padding: 5px 10px;
@@ -40,6 +41,7 @@ header{
 /* Becouse in this div position is set to fixed(relative to the viewport),
  top end right : 0, margin of this div should be same as padding in container */
 .language {
+    color: #777777;
     display: inline-block;
     text-transform: uppercase;
     font-size: 14px;
@@ -48,6 +50,10 @@ header{
     right: 0;
     line-height: 1;
     margin-top: 15px;
+}
+
+.language a span {
+    font-weight: 700;
 }
 
 /* I don't know why padding is moving this element from right edge of the viewport but isn't from the top edge of the viewport.
@@ -59,7 +65,7 @@ header{
 
 /* Im setting height of this section to 100% of viewport height thanks to that my product photo(fake-photo for now) always will be only element visible on
  view after page load. Rest will be bellow */
-#presentation-photo {
+.presentation-photo {
     height: 100vh;
 }
 .fake-photo {
@@ -92,18 +98,44 @@ header{
     font-weight: 700;
 }
 .product-info {
-    text-transform: uppercase;
+    margin-bottom: 25px;
 }
 .product-info h1 {
     font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 .product-info p:first-of-type{
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 .product-info p:nth-of-type(2){
-    text-align: justify;
 }
 
 .footer-logo {
     display: none;
+}
+
+.action button {
+    border: 1px solid #ffffff;
+    outline: none;
+    background: none ;
+    color: #ffffff;
+    padding: 10px 15px;
+    display: inline-block;
+    margin: 0;
+}
+
+.buy-btn {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.more-info-btn{
+    display: inline-block;
+
+}
+
+
+footer{
+    min-height: 200px;
 }
