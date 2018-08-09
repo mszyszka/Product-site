@@ -111,11 +111,7 @@ header{
 .product-info p:nth-of-type(2){
 }
 
-.footer-logo {
-    display: none;
-}
-
-.action button {
+.action input[type=button] {
     border: 1px solid #ffffff;
     outline: none;
     background: none ;
@@ -123,6 +119,29 @@ header{
     padding: 10px 15px;
     display: inline-block;
     margin: 0;
+    font-size: 14px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.action input[type=button]:link {
+    color: #090909;
+    background-color: #ffffff !important;
+}
+
+.action input[type=button]:visited {
+    color: #090909;
+    background-color: #ffffff !important;
+}
+
+.action input[type=button]:hover {
+    color: #090909;
+    background-color: #ffffff !important;
+}
+
+.action input[type=button]:active {
+    color: #090909;
+    background-color: #ffffff !important;
 }
 
 .buy-btn {
@@ -135,7 +154,16 @@ header{
 
 }
 
+footer {
+    margin: 50px 0 35px 0;
+    text-align: center;
+}
 
-footer{
-    min-height: 200px;
+.footer-logo{
+    display: inline-block;
+}
+
+footer .logo{
+    display: inline-block;
+    margin: auto
 }
