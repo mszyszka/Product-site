@@ -1,6 +1,10 @@
-var fakePhotoDiv = document.getElementsByClassName('fake-photo');
+let hamContainer = document.querySelector('.hamburger');
+let menu = document.querySelector('.menu');
 
-//getElementByClassName returns html collection so I need point element like fakePhotoDiv[0]
-fakePhotoDiv[0].addEventListener('click', function(){
-    console.log('fazor');
-});
+function openMenu(){
+    hamContainer.classList.toggle('change');
+    menu.classList.toggle('menu-open');
+}
+
+hamContainer.addEventListener('click', openMenu);
+
